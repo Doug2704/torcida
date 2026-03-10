@@ -1,0 +1,128 @@
+:root {
+    --muted: rgba(255, 255, 255, 0.75);
+    --gold: #ffd700;
+    --gold-bright: #ffea00;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, system-ui, Segoe UI, Arial;
+    background: #000;
+    color: #fff;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url('../baixados.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+    pointer-events: none;
+    filter: contrast(.9) saturate(.6);
+}
+
+header {
+    position: relative;
+    z-index: 2;
+    padding: 28px 16px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .15));
+}
+
+.logo {
+    width: 140px;
+    display: block;
+    margin: 0 auto 8px
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.tagline {
+    color: var(--muted);
+    margin-top: 6px;
+    font-size: .95rem;
+}
+
+.container {
+    max-width: 980px;
+    margin: 20px auto;
+    padding: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    background: rgba(17, 17, 17, .8);
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .6);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+    text-align: left;
+}
+
+th {
+    color: var(--muted);
+    font-weight: 700
+}
+
+tr.next-game {
+    background: rgba(255, 215, 0, 0.25);
+    font-weight: 900;
+    border: 2px solid var(--gold);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 6px var(--gold-bright);
+    }
+
+    50% {
+        box-shadow: 0 0 20px var(--gold);
+    }
+
+    100% {
+        box-shadow: 0 0 6px var(--gold-bright);
+    }
+}
+
+.btn {
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: var(--gold);
+    color: #000;
+    font-weight: 800;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    color: var(--muted);
+    margin-top: 18px;
+    font-size: .9rem;
+}

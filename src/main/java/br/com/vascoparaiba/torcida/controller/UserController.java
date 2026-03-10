@@ -1,0 +1,9 @@
+package br.com.vascoparaiba.torcida.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+
+
+}
