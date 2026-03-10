@@ -6,15 +6,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CacheScheduler {
-
-    private final APIFootballService service;
-
-    public CacheScheduler(APIFootballService service) {
-        this.service = service;
-    }
-
-    @Scheduled(fixedRate = 1000 * 60 * 60 * 6)
-    public void refreshCache() throws Exception {
-        service.getVascoMatches();
-    }
+//
+//    private final APIFootballService service;
+//
+//    public CacheScheduler(APIFootballService service) {
+//        this.service = service;
+//    }
+//
+//    @Scheduled(fixedRate = (1000 * 60 * 60 * 6))
+//    public void refreshCache() throws Exception {
+//        service.getVascoMatches();
+//    }
 }

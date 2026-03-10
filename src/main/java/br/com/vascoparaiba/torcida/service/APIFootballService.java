@@ -17,7 +17,6 @@ public class APIFootballService {
     @Value("${football.api.token}")
     private String token;
 
-    //TODO esconder token
     @Cacheable("vascoMatches")
     public String getVascoMatches() throws Exception {
         HttpRequest request = HttpRequest.newBuilder()
