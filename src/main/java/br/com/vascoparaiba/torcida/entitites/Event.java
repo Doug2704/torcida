@@ -14,17 +14,17 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "title")
+    @Column(name = "title", nullable = false)
     private String title;
 
-    @Column(name = "local")
+    @Column(name = "local", nullable = false)
     private String local;
 
     @Column(name = "date")
     @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss", shape = JsonFormat.Shape.STRING)
     private LocalDateTime date;
 
-    @Column(name = "address")
+    @Column(name = "address", nullable = false)
     private String address;
 
     public void setId(Long id) {
