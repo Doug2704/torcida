@@ -6,12 +6,12 @@ btnFindAddress.addEventListener("click", findAddress)
 
 
 btnOpenForm.addEventListener("click", function createEvent() {
-    document.getElementById("form-to-create-event").classList.add("formVisible")
+    document.getElementById("form-to-create-event").classList.add("card","formVisible")
 
 })
 
 btnHideForm.addEventListener("click", function () {
-    document.getElementById("displayHidden").classList.remove("formVisible")
+    document.getElementById("displayHidden").classList.remove("card","formVisible")
 })
 
 //TODO integrar com backend
