@@ -75,6 +75,7 @@ h1 {
     padding: 18px;
     margin-bottom: 16px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, .6);
+    min-width: 65rem;
 }
 
 table {
@@ -159,7 +160,10 @@ a {
     vertical-align: middle;
 }
 
-
+input {
+    border-radius: 8px;
+    border-style: none;
+}
 
 /* Área de login */
 
@@ -180,4 +184,166 @@ a {
 
 .form-login label {
     width: 70px;
+}
+
+/* Área do home*/
+
+.hidden {
+    display: none;
+}
+
+.formVisible {
+    gap: .1rem;
+    background: rgba(17, 17, 17, .8);
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 16px;
+    min-width: 16rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .6);
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    top: 0;
+    right: -25rem;
+
+}
+
+.btnSmall {
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    margin: .5rem;
+    width: fit-content;
+}
+
+.event-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divCEP {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+
+}
+
+.divCEP input {
+    margin-left: 0;
+    width: 8rem;
+}
+
+.formBtns {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .container {
+        max-width: 90%;
+        padding: 12px;
+    }
+
+    .card {
+        min-width: auto;
+    }
+
+    table {
+        font-size: .9rem;
+    }
+
+}
+
+
+/* Celulares */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .tagline {
+        font-size: .85rem;
+    }
+
+    .container {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 14px;
+        min-width: auto;
+    }
+
+    table {
+        font-size: .85rem;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .icon {
+        height: 1.5rem;
+    }
+
+}
+
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .tagline {
+        font-size: .8rem;
+    }
+
+    table {
+        font-size: .75rem;
+    }
+
+    th,
+    td {
+        padding: 4px;
+    }
+
+}
+
+
+/* Ajuste do formulário flutuante */
+@media (max-width: 900px) {
+
+    .formVisible {
+        position: fixed;
+        right: 10px;
+        left: 10px;
+        top: 20%;
+        min-width: auto;
+        z-index: 999;
+    }
+
 }
