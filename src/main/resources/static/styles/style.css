@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+
 }
 
 body::before {
@@ -75,6 +75,7 @@ h1 {
     padding: 18px;
     margin-bottom: 16px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, .6);
+    min-width: 65rem;
 }
 
 table {
@@ -131,10 +132,38 @@ footer {
     text-align: center;
     color: var(--muted);
     padding: 20px 16px;
+
     font-size: .9rem;
     background: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .15));
 }
 
+/* Área do index */
+
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    background-color: var(--gold-bright);
+}
+
+.contact a:hover {
+    color: var(--gold-bright);
+    text-decoration: underline;
+}
+
+.icon {
+    height: 2rem;
+    vertical-align: middle;
+}
+
+input {
+    border-radius: 8px;
+    border-style: none;
+}
 
 /* Área de login */
 
@@ -156,3 +185,68 @@ footer {
 .form-login label {
     width: 70px;
 }
+
+/* Área do home*/
+
+.hidden {
+    display: none;
+}
+
+.formVisible {
+    gap: .1rem;
+    background: rgba(17, 17, 17, .8);
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 16px;
+    min-width: 16rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .6);
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    top: 10rem;
+    right: 3rem;
+
+}
+
+.btnSmall {
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    margin: .5rem;
+    width: fit-content;
+}
+
+.event-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divCEP {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+
+}
+
+.divCEP input {
+    margin-left: 0;
+    width: 8rem;
+}
+
+.formBtns {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */

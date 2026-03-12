@@ -6,22 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/login.js" defer></script>
 </head>
 
 <body>
-    <form action="" id="form-login" class="form-login">
-        <div>
-            <label for="name">usuário</label>
-            <input type="text" name="name" id="name">
-        </div>
-        <div>
-            <label for="password">Senha</label>
-            <input type="text" name="password" id="password">
-        </div>
-        <button type="submit">entrar</button>
-    </form>
+    
+    <header>
+        <!-- <img src="ícone_Mascote_Zap_PNG.png" alt="Logo Torcida Vasco Paraíba" class="logo"> -->
+        <h1>VASCO PARAÍBA JOGOS</h1>
+        <div class="tagline">A distância é apenas um detalhe</div>
+    </header>
+    <main class="container">
+        <section class="card">
+            <form action="" id="form-login" class="form-login">
+                <div>
+                    <label for="name">usuário</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="password">Senha</label>
+                    <input type="text" name="password" id="password">
+                </div>
+                <button type="submit" id="btnLogin">entrar</button>
+            </form>
+        </section>
+    </main>
 
-    <footer>© 2025 Torcida Vasco Paraíba</footer>
+    <footer class="footer">© 2025 Torcida Vasco Paraíba</footer>
 </body>
 
 </html>
