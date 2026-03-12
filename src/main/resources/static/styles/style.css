@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+
 }
 
 body::before {
@@ -131,9 +131,34 @@ footer {
     text-align: center;
     color: var(--muted);
     padding: 20px 16px;
+
     font-size: .9rem;
     background: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .15));
 }
+
+/* Área do index */
+
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    background-color: var(--gold-bright);
+}
+
+.contact a:hover {
+    color: var(--gold-bright);
+    text-decoration: underline;
+}
+
+.icon {
+    height: 2rem;
+    vertical-align: middle;
+}
+
 
 
 /* Área de login */
